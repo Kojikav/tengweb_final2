@@ -33,7 +33,7 @@ export default function ProductDetail() {
         {/* Info Produk */}
         <div>
           <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-          <p className="text-2xl font-semibold text-primary mb-4">Rp{product.price.toLocaleString('id-ID')}</p>
+          <p className="text-2xl font-semibold text-primary mb-4">{product.price}</p>
           <p className="text-muted-foreground mb-6">{product.description}</p>
 
           <div className="flex items-center gap-4 mb-6">
@@ -68,8 +68,8 @@ export default function ProductDetail() {
           <h2 className="text-xl font-semibold mb-4">Product Details</h2>
           <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
             <li>High-quality automotive parts</li>
-            <li>1-year warranty</li>
-            <li>Free shipping for orders above Rp500.000</li>
+            <li>5-year warranty</li>
+            <li>Free shipping for orders</li>
           </ul>
         </CardContent>
       </Card>

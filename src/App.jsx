@@ -9,6 +9,7 @@ import ProductDetail from './pages/public/ProductDetail'
 import About from './pages/public/About'
 import Contact from './pages/public/Contact'
 import Gallery from './pages/public/Gallery'
+import Login from './pages/public/login'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="gallery" element={<Gallery />} /> {/* ✅ */}
+          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
