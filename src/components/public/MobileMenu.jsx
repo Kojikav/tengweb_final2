@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
 import { Menu } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import ThemeToggle from '@/components/public/ThemeToggle'
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false)
@@ -20,7 +21,7 @@ export default function MobileMenu() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden text-white">
+        <Button variant="ghost" size="icon" className="md:hidden text-foreground hover:text-primary">
           <Menu className="h-6 w-6" />
         </Button>
       </SheetTrigger>
@@ -30,7 +31,7 @@ export default function MobileMenu() {
       >
         <div className="flex flex-col h-full">
           <div className="py-4 border-b border-car-gray mb-6">
-            <h2 className="text-xl font-bold text-white">AutoParts Store</h2>
+            <h2 className="text-xl font-bold text-white">ESEMKA</h2>
           </div>
 
           <nav className="flex flex-col space-y-4">
@@ -47,14 +48,18 @@ export default function MobileMenu() {
           </nav>
 
           <div className="mt-auto pt-6 border-t border-car-gray">
+            <div className="flex justify-between items-center mb-4">
+              <span className="text-muted-foreground text-sm">Appearance</span>
+              <ThemeToggle />
+            </div>
             <div className="flex space-x-4">
               <Link to="/admin/login">
-                <Button variant="outline" size="sm" className="border-car-gray text-white">
+                <Button variant="outline" size="sm" className="border-car-gray text-foreground">
                   Login
                 </Button>
               </Link>
               <Link to="/register">
-                <Button variant="outline" size="sm" className="border-car-gray text-white">
+                <Button variant="outline" size="sm" className="border-car-gray text-foreground">
                   Register
                 </Button>
               </Link>

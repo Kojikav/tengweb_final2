@@ -4,7 +4,7 @@ import Navbar from '@/components/public/Navbar'
 
 export default function PublicLayout() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="w-full max-w-screen-xl mx-auto flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
         <Outlet />
