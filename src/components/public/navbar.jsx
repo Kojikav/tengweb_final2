@@ -16,17 +16,46 @@ export default function Navbar() {
             </NavLink>
           </div>
 
-          {/* Tengah: Nav Items (desktop only) */}
-          <nav className="hidden md:flex space-x-6">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `relative transition-colors after:transition-all after:duration-200 after:ease-in-out ${
-                  isActive
-                    ? 'text-primary font-semibold after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary'
-                    : 'text-foreground hover:text-primary after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary hover:after:w-full'
-                }`
-              }
+        <nav className="hidden md:flex space-x-6">
+          <Link
+            to="/"
+            className="text-gray-800 hover:text-primary transition-colors"
+          >
+            Home
+          </Link>
+
+          <Link
+            to="/shop"
+            className="text-gray-800 hover:text-primary transition-colors"
+          >
+            Shop
+          </Link>
+          <Link
+            to="/gallery"
+            className="text-gray-800 hover:text-primary transition-colors"
+          >
+            Gallery
+          </Link>
+          <Link
+            to="/about"
+            className="text-gray-800 hover:text-primary transition-colors"
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className="text-gray-800 hover:text-primary transition-colors"
+          >
+            Contact
+          </Link>
+        </nav>
+
+        {/* Auth & Cart - desktop only */}
+        <div className="hidden md:flex items-center space-x-4">
+          <Link to="/login">
+            <Button
+              variant="ghost"
+              className="text-gray-800 hover:text-primary"
             >
               Home
             </NavLink>
