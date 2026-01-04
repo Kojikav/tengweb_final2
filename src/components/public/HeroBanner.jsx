@@ -23,12 +23,21 @@ export default function HeroBanner() {
       </div>
 
       {/* Navigation Arrows (optional for carousel) */}
-      <button className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100">
+      <button 
+        className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-3 
+                  text-white/80 hover:text-red-400 transition-colors"
+        aria-label="Previous slide"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      <button className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100">
+
+      <button 
+        className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-3 
+                  text-white/80 hover:text-red-400 transition-colors"
+        aria-label="Next slide"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
