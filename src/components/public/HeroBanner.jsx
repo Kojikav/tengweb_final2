@@ -15,8 +15,8 @@ export default function HeroBanner() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 flex items-center justify-center md:justify-start md:pl-16">
         <div className="text-white text-center md:text-left max-w-xl">
-          <h2 className="text-sm uppercase tracking-widest mb-2">New Technology & Build</h2>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Wheels & Tires Collections</h1>
+          <h2 className="text-sm uppercase tracking-widest mb-2">The Car That Goes <span className="text-red-500">BROOOOMMM!!</span></h2>
+          <h1 className="text-3xl md:text-3xl font-bold mb-5">Superb & Hypercar Sales <br />Around The Globe</h1>
           <Button asChild variant="secondary" size="lg">
             <Link to="/products">Shop Now</Link>
           </Button>
