@@ -11,13 +11,13 @@ export default function AdminLayout() {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar Admin */}
-      <aside className="w-64 bg-car-black text-white p-6 hidden md:block">
+      <aside className="w-64 bg-car-black text-gray-600 p-6 hidden md:block">
         <h2 className="text-2xl font-bold mb-8 text-primary">Admin Panel</h2>
         <nav className="flex flex-col space-y-4">
           <Link to="/admin" className="hover:text-primary transition-colors">Dashboard</Link>
           <Link to="/admin/products" className="hover:text-primary transition-colors">Manage Products</Link>
           <hr className="border-car-gray" />
-          <Link to="/" className="text-sm text-gray-400 hover:text-white">Back to Website</Link>
+          <Link to="/" className="text-gray-600 hover:text-primary">Back to Website</Link>
         </nav>
       </aside>
 
