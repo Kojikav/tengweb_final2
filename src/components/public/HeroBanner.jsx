@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
+import { CircleChevronLeft, CircleChevronRight } from 'lucide-react'
 
 export default function HeroBanner() {
   return (
