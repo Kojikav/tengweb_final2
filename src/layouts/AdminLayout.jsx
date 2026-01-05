@@ -25,7 +25,7 @@ export default function AdminLayout() {
       <main className="flex-grow p-8">
         <header className="flex justify-between items-center mb-8 bg-white p-4 rounded-lg shadow-sm">
           <h1 className="text-xl font-semibold text-gray-800">Administrator</h1>
-          <Button variant="destructive" size="sm" onClick={handleLogout}>Logout</Button>
+          <Button variant="destructive" size="sm" onClick={handleLogout} className={"bg-primary/90 hover:bg-black"}>Logout</Button>
         </header>
         <Outlet />
       </main>

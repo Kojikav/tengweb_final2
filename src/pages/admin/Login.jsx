@@ -21,13 +21,13 @@ export default function AdminLogin() {
   return (
     <div className="flex h-screen items-center justify-center bg-gray-100">
       <form onSubmit={handleLogin} className="p-8 bg-white shadow-md rounded-lg">
-        <h2 className="text-xl font-bold mb-4">Admin Login</h2>
+        <h2 className="text-xl font-bold mb-4 text-orange-600">Admin Login</h2>
         <Input 
           type="password" 
           placeholder="Masukkan Password Admin" 
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="mb-4"
+          className="mb-4 text-black"
         />
         <Button type="submit" className="w-full">Login</Button>
       </form>
