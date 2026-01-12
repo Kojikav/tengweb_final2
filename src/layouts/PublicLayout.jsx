@@ -10,7 +10,7 @@ export default function PublicLayout() {
         <Outlet />
       </main>
       <footer className="border-t p-4 text-center text-sm text-muted-foreground">
-        © 2026 AutoParts Store - Tugas Akhir Semester
+        © 2026 ESEMKA - Tekweb Hore
       </footer>
     </div>
   )

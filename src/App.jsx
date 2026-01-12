@@ -13,12 +13,15 @@ import Contact from "./pages/public/Contact";
 import Gallery from "./pages/public/Gallery";
 import Dashboard from "./pages/admin/Dashboard";
 import AdminLogin from "./pages/admin/login";
+import Login from "./pages/public/login";
+import ProductsAdmin from "./pages/admin/ProductsAdmin";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/login" element={<Login />} />
 
         <Route path="/" element={<PublicLayout />}>
           <Route index element={<Home />} />
@@ -32,6 +35,7 @@ function App() {
         <Route element={<ProtectedRoute />}>
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Dashboard />} />
+            <Route path="products" element={<ProductsAdmin />} />
           </Route>
         </Route>
       </Routes>
