@@ -15,6 +15,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import AdminLogin from "./pages/admin/login";
 import Login from "./pages/public/login";
 import ProductsAdmin from "./pages/admin/ProductsAdmin";
+import ErrorPage from "./pages/public/ErrorPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="gallery" element={<Gallery />} />
+          <Route path="*" element={<ErrorPage />} />
         </Route>
 
         <Route element={<ProtectedRoute />}>

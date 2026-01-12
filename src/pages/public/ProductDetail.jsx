@@ -96,7 +96,7 @@ export default function ProductDetail() {
             </div>
 
             <p className="text-2xl font-bold text-foreground mb-6">
-              Rp {Number(product.price).toLocaleString("id-ID")}
+              $ {Number(product.price).toLocaleString("id-ID")}
             </p>
 
             <div className="space-y-4">
