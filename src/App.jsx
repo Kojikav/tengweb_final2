@@ -16,6 +16,7 @@ import AdminLogin from "./pages/admin/login";
 import Login from "./pages/public/login";
 import ProductsAdmin from "./pages/admin/ProductsAdmin";
 import ErrorPage from "./pages/public/ErrorPage";
+import Register from "./pages/public/register";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
         <Route path="/" element={<PublicLayout />}>
           <Route index element={<Home />} />
