@@ -1,9 +1,14 @@
-// src/components/public/Navbar.jsx
 import { NavLink, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/public/ThemeToggle";
 import MobileMenu from "@/components/public/MobileMenu";
-import { ShoppingCart } from "lucide-react";
+import { User } from "lucide-react"; // Import ikon User
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"; // Import komponen Dropdown
 
 export default function Navbar() {
   // Helper untuk styling NavLink agar kode lebih bersih
@@ -45,29 +50,33 @@ export default function Navbar() {
             </NavLink>
           </nav>
 
-          {/* Kanan: Auth, Theme, & Cart */}
-          <div className="flex items-center space-x-4">
-            <div className="hidden md:block">
+          {/* Kanan: Auth & Theme */}
+          <div className="flex items-center space-x-2">
+            <div className="hidden md:block mr-2">
               <ThemeToggle />
             </div>
             
-            <div className="hidden md:flex items-center space-x-2">
-              <Link to="/login">
-                <Button variant="ghost" className="text-foreground hover:text-primary text-sm">
-                  Login
-                </Button>
-              </Link>
-              <span className="text-muted-foreground">|</span>
-              <Link to="/register">
-                <Button variant="ghost" className="text-foreground hover:text-primary text-sm">
-                  Register
-                </Button>
-              </Link>
-              
-              {/* Cart Icon */}
-              <Button variant="ghost" size="icon" className="text-foreground hover:text-primary">
-                <ShoppingCart className="h-6 w-6" />
-              </Button>
+            <div className="hidden md:flex items-center">
+              {/* Dropdown Profil untuk Login/Register */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="icon" className="text-foreground hover:text-primary">
+                    <User className="h-6 w-6" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-40">
+                  <DropdownMenuItem asChild>
+                    <Link to="/login" className="cursor-pointer w-full font-medium">
+                      Login
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link to="/register" className="cursor-pointer w-full font-medium">
+                      Register
+                    </Link>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
 
             {/* Mobile menu - hanya muncul di layar kecil */}

@@ -9,7 +9,7 @@ export default function HeroBanner() {
       title: "Superb and Hypercar ",
       subtitle: "SUPERCHARGE YOUR RIDE",
       image:
-        "https://images.unsplash.com/photo-1698249173956-43c9c3dcd2f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a29lbmlnc2VnZ3xlbnwwfHwwfHx8MA%3D%3D",
+        "https://i.pinimg.com/1200x/be/ff/fe/befffe377877e8ac74534e82a721293d.jpg",
       cta: "Shop Now",
       link: "/shop",
     },
@@ -27,7 +27,7 @@ export default function HeroBanner() {
       title: "Customize your car",
       subtitle: "UNLEASH THE POWER",
       image:
-        "https://plus.unsplash.com/premium_photo-1694016219798-9e08a6e9509c?q=80&w=1141&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://i.pinimg.com/1200x/51/ef/d2/51efd21ce0eeb490c5e3902c4617f4c3.jpg",
       cta: "Explore",
       link: "/about",
     },
