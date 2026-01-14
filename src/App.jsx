@@ -7,8 +7,8 @@ import ProtectedRoute from "./components/admin/ProtectedRoute";
 // Pages
 import Home from "./pages/public/Home";
 import Shop from "./pages/public/Shop";
-import ProductDetail from "./pages/public/ProductDetail";
-import About from "./pages/public/About";
+import ProductDetail from "./pages/public/ProductDetail";  
+import About from "./pages/public/About";     //import About from "./pages/public/About";
 import Contact from "./pages/public/Contact";
 import Gallery from "./pages/public/Gallery";
 import Dashboard from "./pages/admin/Dashboard";
@@ -29,11 +29,11 @@ function App() {
 
         <Route path="/" element={<PublicLayout />}>
           <Route index element={<Home />} />
-          <Route path="shop" element={<Shop />} />
-          <Route path="product/:id" element={<ProductDetail />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="gallery" element={<Gallery />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
 

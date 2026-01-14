@@ -54,6 +54,8 @@ export default function Register() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background p-4">
+      
+      
       <Card className="w-full max-w-sm">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold">Create Account</CardTitle>
@@ -109,6 +111,9 @@ export default function Register() {
               <Button type="submit" className="w-full">
                 Register
               </Button>
+              <button onClick={() => navigate("/")} className="w-full">
+                Kembali
+              </button>
             </div>
           </form>
           <div className="mt-4 text-center text-sm">
