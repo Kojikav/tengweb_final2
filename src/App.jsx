@@ -17,6 +17,7 @@ import Login from "./pages/public/login";
 import ProductsAdmin from "./pages/admin/ProductsAdmin";
 import ErrorPage from "./pages/public/ErrorPage";
 import Register from "./pages/public/register";
+import GalleryAdmin from "./pages/admin/GalleryAdmin";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="products" element={<ProductsAdmin />} />
+            <Route path="gallery" element={<GalleryAdmin />} />
           </Route>
         </Route>
       </Routes>
